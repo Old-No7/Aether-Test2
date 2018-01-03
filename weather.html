@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!--     <script type="text/javascript" script-name="raleway" src="http://use.edgefonts.net/raleway.js"></script> -->
+    <title>Aether  &#9729; </title>
+
+    <!-- CSS is an edited version of - bootswatch/cosmo -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+<!--  -->
+
+
+<!-- GRID -->
+<div class="wrapper">
+  <div class="panelF" href="index.html">
+    <button type="submit" class="btn btn-default btn-lg" onclick="window.location.href='index.html'" />&#8634;</button>
+  </div>
+  <div class="panelA" id="outputName"><-- please enter a location</div>
+  <div class="panelBa" id="currentDay"></div>
+  <div class="panelBb" id="currentFullTime"></div>
+  <div class="panelI"></div>
+
+
+  <div class="panelEtitle">7-Day Forecast</div>
+
+  <div class="panelForecast">
+    <div class="wrapper">
+      <div class="panelForecastDay">Today:</div>
+      <div class="panelForecastIcon" id="outputfIcon0"></div>
+      <div class="panelForecastMax" id="outputfMax0"></div>
+      <div class="panelForecastMin" id="outputfMin0"></div>
+      <div class="panelForecastGap"></div>
+
+      <div class="panelForecastDay" id="outputfDay1"></div>
+      <div class="panelForecastIcon" id="outputfIcon1"></div>
+      <div class="panelForecastMax" id="outputfMax1"></div>
+      <div class="panelForecastMin" id="outputfMin1"></div>
+      <div class="panelForecastGap"></div>
+
+      <div class="panelForecastDay" id="outputfDay2"></div>
+      <div class="panelForecastIcon" id="outputfIcon2"></div>
+      <div class="panelForecastMax" id="outputfMax2"></div>
+      <div class="panelForecastMin" id="outputfMin2"></div>
+      <div class="panelForecastGap"></div>
+
+      <div class="panelForecastDay" id="outputfDay3"></div>
+      <div class="panelForecastIcon" id="outputfIcon3"></div>
+      <div class="panelForecastMax" id="outputfMax3"></div>
+      <div class="panelForecastMin" id="outputfMin3"></div>
+      <div class="panelForecastGap"></div>
+
+      <div class="panelForecastDay" id="outputfDay4"></div>
+      <div class="panelForecastIcon" id="outputfIcon4"></div>
+      <div class="panelForecastMax" id="outputfMax4"></div>
+      <div class="panelForecastMin" id="outputfMin4"></div>
+      <div class="panelForecastGap"></div>
+
+      <div class="panelForecastDay" id="outputfDay5"></div>
+      <div class="panelForecastIcon" id="outputfIcon5"></div>
+      <div class="panelForecastMax" id="outputfMax5"></div>
+      <div class="panelForecastMin" id="outputfMin5"></div>
+      <div class="panelForecastGap"></div>
+
+      <div class="panelForecastDay" id="outputfDay6"></div>
+      <div class="panelForecastIcon" id="outputfIcon6"></div>
+      <div class="panelForecastMax" id="outputfMax6"></div>
+      <div class="panelForecastMin" id="outputfMin6"></div>
+      <div class="panelForecastGap"></div>
+
+      <div class="panelForecastDay" id="outputfDay7"></div>
+      <div class="panelForecastIcon" id="outputfIcon7"></div>
+      <div class="panelForecastMax" id="outputfMax7"></div>
+      <div class="panelForecastMin" id="outputfMin7"></div>
+    </div>
+  </div>
+
+
+
+
+  
+  <div class="panelH">Current weather condition: </div>
+  <div class="panelB"></div>
+  <div class="panelJ" id="outputWeatherDesc"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelMidBuffer"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelDa">Todays min temp:</div>
+  <div class="panelValue" id="outputTempMin"></div>
+  <div class="panelC" id="outputTemp">...</div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelDb">Todays max temp:</div>
+  <div class="panelValue" id="outputTempMax"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelDc">Current humidity:</div>
+  <div class="panelValue" id="outputHumidity"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelDd">Current wind speed:</div>
+  <div class="panelValue" id="outputWindSpeed"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+  <div class="panelBlank"></div>
+</div>
+
+
+
+<!-- <div class="panelF">
+      <a class="house" href="index.html"></a>
+    </div> -->
+<!--
+//========================================================
+// 
+//  back button
+//
+// ======================================================== 
+
+    <div class="footer">
+      <a class="house" href="index.html"></a>
+    </div> 
+
+-->
+
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+        </script>
+
+ <!-- Axios client -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<!-- javacript -->
+    <script src="js/main.js"></script>
+
+<!-- triggers response of data by savedInput city -->
+    <script>
+      updateByCity('searchText');
+    </script>
+
+
+<!-- Get current Time -->
+    <script>
+      var d = new Date();
+      document.getElementById("currentFullTime").innerHTML = d.getHours() + ":" + (d.getMinutes()<10?'0':'') + d.getMinutes();
+    </script>
+
+<!-- Get Current Day -->
+    <script>
+      var d = new Date();
+      var days = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+      document.getElementById("currentDay").innerHTML = days[d.getDay()];
+    </script>
+
+
+
+
+<!-- LARGE WEATHER IMAGE -->
+<!-- <script type="text/javascript">
+    var largeImgPath = "";
+    var wID ='largeWeatherID';
+    if (document.body) 
+      {
+        if (wID >= 200 && wID < 900) 
+        {
+         largeImgPath = "../imgs/largeweather/937.png";
+       }
+       else if (wID >= 8 && wID <= 18) 
+        {
+          largeImgPath = ;
+        }
+        else if (wID >= 19 && wID <= 21) 
+        {
+          largeImgPath = ;
+        }
+       else
+        {
+          largeImgPath = ;
+        }
+      }
+  </script>
+        <div id="locator">
+          <img src='largeImgPath'><br>
+        </div> -->
+
+        
+
+
+
+
+
+
+<!-- Dynamic Background -->
+<script type="text/javascript">
+    var currentTime = new Date().getHours();
+    var tOD ='';
+    if (document.body) 
+      {
+        if (currentTime >= 5 && currentTime <= 7) 
+        {
+         tOD = "Dawn";
+       }
+       else if (currentTime >= 8 && currentTime <= 18) 
+        {
+          tOD = "Day";
+        }
+        else if (currentTime >= 19 && currentTime <= 21) 
+        {
+          tOD = "Dusk";
+        }
+       else
+        {
+          tOD = "Night";
+        }
+      }
+    document.body.background = "../imgs/backgrounds/" + tOD + "Background.png";
+  </script>
+
+
+</body>
+</html>
+
